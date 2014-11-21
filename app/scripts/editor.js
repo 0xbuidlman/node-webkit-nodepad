@@ -1,3 +1,14 @@
+var markdown = require('markdown').markdown,
+    $        = global.jQuery;
+
+//
+// Render when data changes
+//
+$('#editor-input').on("textchange", function() {
+  var content = $( this ).val();
+  $('#editor-preview').html(markdown.toHTML( content ));
+});
+
 //
 // Context menu
 //
