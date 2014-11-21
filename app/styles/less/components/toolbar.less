@@ -1,0 +1,92 @@
+// ---------------------------------------------------------------
+//  Components -> Toolbar
+// ---------------------------------------------------------------
+
+.toolbar {
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: @toolbar-bg;
+  height: @toolbar-height;
+  width: 100%;
+  position: relative;
+
+  &-drag {
+    -webkit-app-region: drag;
+    content: " ";
+    flex: 1;
+  }
+
+  .btn-action {
+    line-height: 20px;
+    color: @toolbar-btn-text;
+    font-size: 24px;
+    padding: (@toolbar-height - @toolbar-line-height) / 2;
+  }
+
+  &-brand {
+    display: flex;
+
+    & > img {
+      height: @toolbar-height;
+      padding: (@toolbar-height - @toolbar-line-height) / 2;
+    }
+
+    .caption {
+      padding: (@toolbar-height - @toolbar-line-height) / 2;
+      line-height: 24px;
+      vertical-align: middle;
+      color: #fff;
+    }
+
+    .btn-function {
+      &:hover {
+        background-color: @btn-function-bg-hover;
+      }
+    }
+  }
+
+  &-actions {
+    margin-left: auto;
+
+    .btn {
+      &-restore {
+        &:hover {
+          background-color: @btn-restore-bg-hover;
+        }
+      }
+
+      &-resize {
+        &:hover {
+          background-color: @btn-resize-bg-hover;
+        }
+      }
+
+      &-close {
+        &:hover {
+          background-color: @btn-close-bg-hover;
+        }
+      }
+    }
+  }
+
+  &-function {
+    position: absolute;
+    left: 123px;
+    top: 40px;
+    background-color: #fff;
+    border: 1px solid #cfcfcf;
+    display: none;
+
+    .btn-file {
+      display: block;
+      padding: 10px 35px;
+      width: 100%;
+
+      &:hover {
+        color: #fff;
+        background-color: @btn-function-bg-hover;
+      }
+    }
+  }
+}

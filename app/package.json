@@ -1,0 +1,20 @@
+{
+  "name": "NodePad",
+  "main": "views/app.html",
+  "version": "1.0.0",
+  "window": {
+    "title": "NodePad",
+    "toolbar": false,
+    "frame": false,
+    "width": 800,
+    "height": 500,
+    "min_width": 400,
+    "min_height": 200,
+    "position": "center"
+  },
+  "dependencies": {
+    "markdown": "^0.5.0",
+    "node-notifier": "^4.0.2",
+    "node-webkit-fdialogs": "^0.2.7"
+  }
+}

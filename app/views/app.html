@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../styles/styles.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="toolbar">
+        <div class="toolbar-brand">
+          <img src="../images/brand.svg" alt="">
+          <span class="caption">NodePad</span>
+          <button id="app-function" class="btn btn-action btn-function"><i class="icon-toolbar-four"></i></button>
+        </div>
+        <div class="toolbar-drag"></div>
+        <div class="toolbar-actions">
+          <button id="window-restore" class="btn btn-action btn-restore"><i class="icon-toolbar-restore"></i></button>
+          <button id="window-resize" class="btn btn-action btn-resize"><i class="icon-toolbar-maximize"></i></button>
+          <button id="window-close" class="btn btn-action btn-close"><i class="icon-toolbar-close"></i></button>
+        </div>
+        <div id="app-function-menu" class="toolbar-function">
+          <button id="app-open" class="btn btn-file">Open File</button>
+          <button id="app-save" class="btn btn-file">Save File</button>
+        </div>
+      </div>
+      <div class="editor">
+        <div class="editor-input">
+          <textarea id="editor-input"># Welcome to NodePad!
+---
+The best editor!</textarea>
+        </div>
+        <div id="editor-preview" class="editor-preview">Preview</div>
+      </div>
+    </div>
+    <script src="../scripts/vendor/jquery.min.js"></script>
+    <script src="../scripts/vendor/jquery.textchange.min.js"></script>
+    <!-- Node -->
+    <script src="../scripts/app.js"></script>
+  </body>
+</html>

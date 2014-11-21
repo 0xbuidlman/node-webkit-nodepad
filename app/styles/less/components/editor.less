@@ -1,0 +1,59 @@
+// ---------------------------------------------------------------
+//  Components -> Editor
+// ---------------------------------------------------------------
+
+.editor {
+  flex: 1;
+  width: 100%;
+  display: flex;
+
+  &-input,
+  &-preview {
+    flex: 1 50%;
+    position: relative;
+  }
+
+  &-input textarea {
+    padding: 25px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: auto;
+    font-family: @base-font-family;
+    font-size: @editor-font-size;
+    line-height: @editor-line-height;
+    word-break: normal;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    resize: none;
+    -webkit-user-select: auto;
+    background-color: @editor-input-bg;
+    border: 0;
+    outline: 0;
+  }
+
+  &-preview {
+    padding: 25px;
+    overflow: hidden;
+    word-break: normal;
+    word-wrap: break-word;
+    font-size: @editor-font-size;
+    line-height: @editor-line-height;
+    background-color: @editor-preview-bg;
+    pointer-events: none;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}
