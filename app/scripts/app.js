@@ -15,3 +15,10 @@ global.jQuery       = jQuery;
 //
 require('../scripts/windowEvents');
 require('../scripts/editor');
+var menu = require('../scripts/menu');
+
+//
+// Initialization
+//
+menu.initBarMenu();
+menu.initContextMenu();
