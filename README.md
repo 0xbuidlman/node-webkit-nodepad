@@ -3,6 +3,8 @@ NodePad
 
 NodePad — это приложение, которое разрабатывается в учебных целях для моего блога [Canonium](http://www.canonium.com/) и в частности, серии статей про технологию [node-webkit](https://github.com/rogerwang/node-webkit).
 
+![NodePad](https://cloud.githubusercontent.com/assets/7034281/5149540/de602000-71da-11e4-9755-c3b9b8da8199.png)
+
 Содержание
 -------------------
 
@@ -27,3 +29,7 @@ NodePad — это приложение, которое разрабатывае
   * Вывод ко второй части
  * [Подготовка к релизу](http://canonium.com/articles/tutorial-nodejs-desktop-app-release)
   * В процессе написания
+
+Лицензия
+-------------------
+MIT.
