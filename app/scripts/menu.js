@@ -55,9 +55,9 @@ function initContextMenu() {
 // Menubar
 //
 function initBarMenu() {
-  var nativeMenuBar = new gui.Menu({ type: "menubar" });
-  if (process.platform === "darwin") {
-    nativeMenuBar.createMacBuiltin("NodePad");
+  var nativeMenuBar = new gui.Menu({ type: 'menubar' });
+  if (process.platform === 'darwin') {
+    nativeMenuBar.createMacBuiltin('NodePad');
   }
   mainWindow.menu = nativeMenuBar;
 }
